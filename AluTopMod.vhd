@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL; -- Add this library
 
-entity Lab3final is
+entity AluTopMod is
     Port ( 
         s0: in STD_LOGIC;
         s1: in STD_LOGIC; 
@@ -11,9 +11,9 @@ entity Lab3final is
         sum1, sum2: out std_logic_vector(3 downto 0);
         state_in: in std_logic_vector(2 downto 0) 
     );
-end Lab3final;
+end AluTopMod;
 
-architecture Behavioral of Lab3final is
+architecture Behavioral of AluTopMod is
     component a_unit4 is
         Port ( 
             c_in: in STD_LOGIC;
